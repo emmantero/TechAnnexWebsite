@@ -4,6 +4,9 @@
 	import * as index from '$lib';
 	import './style.css';
 
+	// IMPORTING NAVBAR ASSETS
+	import * as NavbarAssets from '../../assets/Navbar-Assets/navbar-assets.svelte';
+
 	let { routes, children } = $props();
 	const initialize = () => {
 		let _Page: any = $state();
@@ -33,8 +36,9 @@
 		<div class="logo-container">
 			<!-- = -->
 			<div class="logo-sect">
-				<p>Business Name</p>
-				<img id="logo" src="" alt="Business Logo" />
+				<!-- <p>Business Name</p> -->
+				<!-- <img id="logo" src="" alt="Business Logo" /> -->
+				<img id="logo" src={NavbarAssets.NavbarImg} alt="" srcset="" class="" />
 			</div>
 			<!-- = -->
 		</div>

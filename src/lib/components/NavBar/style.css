@@ -2,7 +2,7 @@
 
 :root {
 	--anchor-margin: 15px;
-	--logo-size-reg: 35px;
+	--logo-size-reg: 100px;
 }
 
 .page-base {
@@ -14,7 +14,8 @@
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100vw;
-		background-color: var(--main-dark-color);
+		/* background-color: var(--main-dark-color); */
+		background-color: white;
 		font-family: var(--main-font);
 		height: var(--nav-bar-height);
 		z-index: 10;
@@ -37,7 +38,7 @@
 					background-color: var(--yellow);
 					height: var(--logo-size-reg);
 					width: var(--logo-size-reg);
-					margin: auto 10px auto 0px;
+					/* width: 100px; */
 					border-radius: 10px;
 				}
 			}
@@ -51,9 +52,9 @@
 				margin: var(--anchor-margin);
 				font-family: var(--main-font);
 				padding: 6px 20px;
-				font-size: 1rem;
+				font-size: 1.4rem;
 				background-color: transparent;
-				color: var(--off-white);
+				color: #507642;
 				cursor: pointer;
 				transition: var(--subtle-delay);
 				border-radius: 5px;
@@ -62,8 +63,8 @@
 
 			.anchor.active,
 			.anchor:hover {
-				border: 2px solid var(--yellow);
-				color: var(--yellow);
+				/* border: 2px solid var(--yellow); */
+				color: #507642;
 				transition: var(--subtle-delay);
 			}
 		}

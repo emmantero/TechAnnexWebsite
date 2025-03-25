@@ -6,13 +6,26 @@ const anchors = [
 		desktop: 'home_id'
 	},
 	{
+		mobile: 'about_id_mobile',
+		desktop: 'about_id'
+	},
+	{
+		mobile: 'services_id_mobile',
+		desktop: 'services_id'
+	},
+	{
+		mobile: 'events_id_mobile',
+		desktop: 'events_id'
+	},
+	{
+		mobile: 'partnerships_id_mobile',
+		desktop: 'partnerships_id'
+	},
+	{
 		mobile: 'contact_us_id_mobile',
 		desktop: 'contact_us_id'
 	},
-	{
-		mobile: 'about_id_mobile',
-		desktop: 'about_id'
-	}
+	
 ];
 
 /**

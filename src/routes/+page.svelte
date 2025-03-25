@@ -37,6 +37,9 @@
 	const _navBarRoutes = [
 		_navBarRoute('home_id', 'home', 'Home Button', 'Home'),
 		_navBarRoute('about_id', 'about', 'About Button', 'About'),
+		_navBarRoute('services_id', 'services', 'Services Button', 'Services'),
+		_navBarRoute('events_id', 'events', 'Events Button', 'Events'),
+		_navBarRoute('partnerships_id', 'partnerships', 'Partnerships Button', 'Partnerships'),
 		_navBarRoute('contact_us_id', 'contact_us', 'Contact Us Button', 'Contact Us')
 	];
 

@@ -1,7 +1,8 @@
 <script lang="ts">
-	import * as Assets from '../../assets/assets.svelte';
+	import * as HomePageAssets from '../../assets/HomePage-Assets/homepage-assets.svelte';
 	import './style.css';
-	let businessName = 'Business Name';
+
+	let headerTitle = 'Sustainable Tech Solutions';
 	let businessShortMessage = 'Add your short message here!';
 </script>
 
@@ -11,7 +12,7 @@
 		<div class="floating-box-foo" id="actions">
 			<!-- = -->
 			<div class="upper">
-				<h1>{businessName}</h1>
+				<h1>{headerTitle}</h1>
 				<p>{businessShortMessage}</p>
 			</div>
 			<!-- = -->
@@ -33,7 +34,7 @@
 			<img src="" alt="logo element here" class="floating-logo" />
 		</div>
 		<!-- = -->
-		<img src={Assets.LandingPageBG} alt="" srcset="" class="landing-page-bg" />
+		<img src={HomePageAssets.HomePageHeader} alt="" srcset="" class="landing-page-bg" />
 	</section>
 	<!-- LANDING PAGE SECTION -->
 

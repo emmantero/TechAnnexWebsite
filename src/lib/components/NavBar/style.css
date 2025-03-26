@@ -35,10 +35,10 @@
 					color: var(--main-dark-color);
 					margin: auto;
 					font-size: 0.5rem;
-					background-color: var(--yellow);
+					/* background-color: var(--yellow); */
 					height: var(--logo-size-reg);
-					width: var(--logo-size-reg);
-					/* width: 100px; */
+					/* width: var(--logo-size-reg); */
+					width: 200px;
 					border-radius: 10px;
 				}
 			}

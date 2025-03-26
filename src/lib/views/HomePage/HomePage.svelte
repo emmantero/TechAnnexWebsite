@@ -3,7 +3,10 @@
 	import './style.css';
 
 	let headerTitle = 'Sustainable Tech Solutions';
-	let businessShortMessage = 'Add your short message here!';
+	let headerSubTitle = 'Empowering  Communities Through';
+	let headerSpecialText = 'E-Waste Recycling';
+
+	let text = "Find a Collection Event Near You";
 </script>
 
 <main class="main-page-content">
@@ -13,26 +16,36 @@
 			<!-- = -->
 			<div class="upper">
 				<h1>{headerTitle}</h1>
-				<p>{businessShortMessage}</p>
+				<div class="upper-p">
+					<p>{headerSubTitle}</p>
+					<p>{headerSpecialText}</p>
+				</div>
+				<div class="upper-button">
+					<button class="header-btn">
+						<p class="header-btn-text">{text}</p>
+					</button>
+				</div>
 			</div>
+
 			<!-- = -->
-			<div class="lower">
+			<!-- <div class="lower">
 				<button id="action-1">
-					<p>Action 1</p>
+					<p>Find a Collection Event Near You</p>
 					<span class="button-effect" id="mask"></span>
 					<span class="button-effect" id="bg"></span>
 				</button>
+				
 				<button id="action-2">
 					<p>Action 2</p>
 					<span class="button-effect" id="mask"></span>
 					<span class="button-effect" id="bg"></span>
 				</button>
-			</div>
+			</div> -->
 		</div>
 		<!-- = -->
-		<div class="floating-box-foo" id="logo">
+		<!-- <div class="floating-box-foo" id="logo">
 			<img src="" alt="logo element here" class="floating-logo" />
-		</div>
+		</div> -->
 		<!-- = -->
 		<img src={HomePageAssets.HomePageHeader} alt="" srcset="" class="landing-page-bg" />
 	</section>
@@ -40,22 +53,21 @@
 
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
 	<section class="summary">
+
+
 		<div class="content" style="flex-direction: row;">
-			<div class="left-box">
-				<!-- svelte-ignore a11y_img_redundant_alt -->
-				<img src="" alt="Object image here" class="summary-img" />
-				<span class="border" id="el1"></span>
-				<span class="border" id="el2"></span>
-			</div>
-			<div class="right-box">
-				<h1>Business summary here!</h1>
-				<p class="section-typography">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo doloremque, architecto
-					necessitatibus dignissimos, totam animi saepe enim accusamus modi cupiditate quisquam.
-					Atque, corporis nihil.
-				</p>
+			<div class="">
+				<div class="homepage-quote">
+					<img src={HomePageAssets.Quote} alt="" srcset="" class="" />
+				</div>
+				<div class="homepage-text">
+	
+				</div>
 			</div>
 		</div>
+
+
+
 		<div class="content" style="flex-direction: row;">
 			<div class="left-box">
 				<!-- svelte-ignore a11y_img_redundant_alt -->

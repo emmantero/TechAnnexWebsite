@@ -6,3 +6,6 @@
 
 import _HomePageHeader  from "./computerOnSandF.pnh.webp"
 export const HomePageHeader = _HomePageHeader 
+
+import _Quote  from "./quote.png"
+export const Quote = _Quote 

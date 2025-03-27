@@ -78,7 +78,40 @@
 
 				<div class="keyHighlights-carousel">
 					<div class="carousel-slide">
-						
+
+						<div class="carousel-card">
+							<div class="carousel-image">
+								<img src={HomePageAssets.Electronics} alt="" srcset="" />
+							</div>
+							<div class="carousel-text">
+								<h2>
+									1.5 Million Pounds of <br> Electronic Diverted <br> from Landfills!
+								</h2>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<div class="carousel-image">
+								<img src={HomePageAssets.Partneering} alt="" srcset="" />
+							</div>
+							<div class="carousel-text">
+								<h2>
+									Partnering with <br> Churches, Schools & <br> Non-Profits
+								</h2>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<div class="carousel-image">
+								<img src={HomePageAssets.CollectionEvent} alt="" srcset="" />
+							</div>
+							<div class="carousel-text">
+								<h2>
+									Join our Next Collection <br> Event!
+								</h2>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

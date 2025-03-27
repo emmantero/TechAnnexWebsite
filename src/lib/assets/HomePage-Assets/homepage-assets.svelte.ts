@@ -9,3 +9,5 @@ export const HomePageHeader = _HomePageHeader
 
 import _Quote  from "./quote.png"
 export const Quote = _Quote 
+
+// CAROUSEL

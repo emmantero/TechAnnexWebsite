@@ -56,12 +56,14 @@
 
 
 		<div class="content" style="flex-direction: row;">
-			<div class="">
+			<div class="homepage-intro">
 				<div class="homepage-quote">
 					<img src={HomePageAssets.Quote} alt="" srcset="" class="" />
 				</div>
 				<div class="homepage-text">
-	
+					<h1>
+						At <b>TechAnnex</b>, we are dedicated to promoting responsible <br> e-waste recycling by hosting community-driven collection <br> events and fostering environmental awareness. 
+					</h1>
 				</div>
 			</div>
 		</div>
@@ -69,21 +71,22 @@
 
 
 		<div class="content" style="flex-direction: row;">
-			<div class="left-box">
-				<!-- svelte-ignore a11y_img_redundant_alt -->
-				<img src="" alt="Object image here" class="summary-img" />
-				<span class="border" id="el1"></span>
-				<span class="border" id="el2"></span>
-			</div>
-			<div class="right-box">
-				<h1>Business summary here!</h1>
-				<p class="section-typography">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo doloremque, architecto
-					necessitatibus dignissimos, totam animi saepe enim accusamus modi cupiditate quisquam.
-					Atque, corporis nihil.
-				</p>
+			<div class="keyHighlights-container">
+				<div class="keyHighlights-title">
+					<h1>Key Highlights</h1>
+				</div>
+
+				<div class="keyHighlights-carousel">
+					<div class="carousel-slide">
+						
+					</div>
+				</div>
 			</div>
 		</div>
+
+
+
+
 		<div class="content" style="flex-direction: row;">
 			<div class="left-box">
 				<!-- svelte-ignore a11y_img_redundant_alt -->

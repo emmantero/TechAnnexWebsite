@@ -77,6 +77,7 @@
 				</div>
 
 				<div class="keyHighlights-carousel">
+
 					<div class="carousel-slide">
 
 						<div class="carousel-card">
@@ -113,29 +114,39 @@
 						</div>
 
 					</div>
+
+					
+
+					
 				</div>
 			</div>
 		</div>
 
 
-
-
 		<div class="content" style="flex-direction: row;">
-			<div class="left-box">
-				<!-- svelte-ignore a11y_img_redundant_alt -->
-				<img src="" alt="Object image here" class="summary-img" />
-				<span class="border" id="el1"></span>
-				<span class="border" id="el2"></span>
+			<div class="upcomingEvents-container">
+				<div class="upcomingEvents-title">
+					<h1>Upcoming Events</h1>
+				</div>
+
+				<div class="upcomingEvents-carousel">
+
+					<div class="events-carousel-slide">
+	
+						<div class="events-carousel-card">
+							<img src={HomePageAssets.Dec19} alt="" srcset="" />
+							<img src={HomePageAssets.Feb23} alt="" srcset="" />
+							<img src={HomePageAssets.Apr9} alt="" srcset="" />
+						</div>
+	
+					</div>
+	
+				</div>
 			</div>
-			<div class="right-box">
-				<h1>Business summary here!</h1>
-				<p class="section-typography">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo doloremque, architecto
-					necessitatibus dignissimos, totam animi saepe enim accusamus modi cupiditate quisquam.
-					Atque, corporis nihil.
-				</p>
-			</div>
+
 		</div>
+
+		
 	</section>
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
 

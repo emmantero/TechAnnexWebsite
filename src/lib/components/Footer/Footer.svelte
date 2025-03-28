@@ -3,6 +3,10 @@
 	import * as index from '$lib';
 	import './style.css';
 	import { onMount } from 'svelte';
+
+	// IMPORT FOOTER ASSETS
+	import * as FooterAssets from '../../assets/Footer-Assets/footer-assets.svelte';
+
 	let { routes } = $props();
 	let message = 'Add your message here!';
 	let highlight = 'This is a highlight message of this website.';
@@ -17,36 +21,60 @@
 {#if loadIn}
 	<footer class="page-footer">
 		<div class="box-container">
-			<div class="box">
-				<div class="upper-box">
-					<div class="logo-sect">
-						<img src="" alt="Business Logo" />
-						<p>Business Name</p>
+			<div class="box-cont1">
+				<div class="box">
+					<div class="upper-box">
+						<div class="logo-sect">
+							<h3>Company</h3>
+						</div>
+						<p>About</p>
+						<p>Certificate and Registration</p>
 					</div>
-					<p class="message">{message}</p>
 				</div>
-				<div class="contacts-container">
-					<p>City, StreetName street, Country, 0000</p>
-					<p>businessemail@email.com</p>
-					<p>+639123456789</p>
+				<div class="box">
+					<div class="upper-box">
+						<div class="logo-sect">
+							<h3>Useful Links</h3>
+						</div>
+						<p>Learn more about our Mission</p>
+						<p>Find an Event</p>
+						<p>Partner with Us</p>
+					</div>
 				</div>
 			</div>
-			<div class="box">
-				<h3>Pages</h3>
-				{#each routes as route}
-					<button
-						class="anchor-route"
-						onclick={() => {
-							controllers.RouteTo(route.path);
-							index._setAnchorToActive(route.id);
-						}}>{route.text}</button
-					>
-				{/each}
-			</div>
-			<div class="box">
-				<h3 class="highlight">{highlight}</h3>
+
+
+
+			<div class="box-cont2">
+				<div class="right-box-container">
+					<div class="right-box">
+						<div class="social-icons">
+							<img src={FooterAssets.Instagram} alt="" srcset="" />
+							<img src={FooterAssets.Twitter} alt="" srcset="" />
+							<img src={FooterAssets.Facebook} alt="" srcset="" />
+						</div>
+						<div class="languages">
+							<p>English</p>
+							<p>|</p>
+							<p>Mexico</p>
+							<p>|</p>
+							<p>France</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<p id="tag">@denzeysenpai - 2025</p>
+
+		
+
+		<div class="btm-text">
+			<div class="btm-text-group">
+				<p>Legal</p>
+				<p>Privacy Center</p>
+				<p>Privacy Policy</p>
+				<p>Terms and Condition</p>
+			</div>
+			<p id="">@2025 TechAnnex</p>
+		</div>
 	</footer>
 {/if}

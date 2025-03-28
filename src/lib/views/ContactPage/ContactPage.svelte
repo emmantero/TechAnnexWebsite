@@ -1,5 +1,8 @@
 <script lang="ts">
 	import './style.css';
+
+	// IMPORTING CONTACT US  ASSETS
+	import * as ContactUsAssets from '../../assets/Contact-Us-Assets/contact-us-assets.svelte';
 </script>
 
 <div class="contacts-page">
@@ -7,44 +10,28 @@
 		<h1>Contact us!</h1>
 		<form class="grid">
 			<div class="box">
-				<h2>Some quirky header here!</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ullam molestias est
-					corrupti aspernatur dignissimos similique. Recusandae porro libero saepe non repudiandae
-					ab deleniti omnis unde, dicta hic quo blanditiis eius, harum consequatur similique! Animi
-					sit veniam iste non! Dignissimos sit minima assumenda dicta nobis sequi laudantium debitis
-					hic totam.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit sunt doloribus odit
-					minus aliquam rem ab pariatur molestiae laudantium aspernatur hic, veritatis, soluta earum
-					fugit unde sed, tenetur totam iusto.
-				</p>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, voluptatum? Possimus
-					distinctio quidem voluptatem deserunt!
-				</p>
+				<div class="techAnnexImg-container">
+					<img id="" src={ContactUsAssets.WeAreTechAnnex} alt="" srcset="" class="" />
+				</div>
 			</div>
 			<div class="box">
+
+				<div class="form-text">
+					<h2>Help us to reach you!</h2>
+				</div>
+				
 				<div class="row">
 					<div class="cell">
-						<label for="fName">First Name</label>
-						<input type="text" id="fName" name="fName" placeholder="First Name" />
-					</div>
-					<div class="cell">
-						<label for="lName">Last Name</label>
-						<input type="text" id="lName" name="lName" placeholder="Last Name" />
+						<input type="name" id="email" name="name" placeholder="Full Name" />
 					</div>
 				</div>
 				<div class="row">
 					<div class="cell">
-						<label for="email">Email</label>
 						<input type="email" id="email" name="email" placeholder="Your email address" />
 					</div>
 				</div>
 				<div class="row">
 					<div class="cell">
-						<label for="message">Message</label>
 						<textarea id="message" name="message" placeholder="Your message here!"></textarea>
 					</div>
 				</div>
@@ -59,5 +46,13 @@
 				</div>
 			</div>
 		</form>
+
+
+		<div class="grid">
+			<div class="box">
+				
+			</div>
+
+		</div>
 	</div>
 </div>

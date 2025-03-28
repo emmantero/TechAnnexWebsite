@@ -15,7 +15,7 @@
 		justify-content: space-between;
 		width: 100vw;
 		/* background-color: var(--main-dark-color); */
-		background-color: white;
+		background-color: #F3F4EC;
 		font-family: var(--main-font);
 		height: var(--nav-bar-height);
 		z-index: 10;

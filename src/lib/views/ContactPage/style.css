@@ -1,15 +1,15 @@
 @import '../../../global.css';
 
 .contacts-page {
-	padding: var(--gutter);
+	padding: 0 4rem;
 	display: flex;
 	animation-name: fadeIn;
 	animation-duration: 1s;
 	flex-direction: row;
 	width: auto;
+	background-color: #F3F4EC;
 	* {
 		font-family: var(--main-font);
-		color: var(--yellow);
 		width: fit-content;
 	}
 
@@ -21,37 +21,56 @@
 		flex-direction: column;
 		h1 {
 			text-align: center;
-			font-size: 4rem;
+			font-size: 5rem;
 			width: fit-content;
-			padding: var(--gutter);
+			padding: 2rem;
 			display: flex;
 			margin: auto;
+			color: #507642;
 		}
 
 		.grid {
 			display: flex;
 			gap: 1rem;
 			margin: auto;
-			width: auto;
+			width: 100%;
 			height: auto;
-			border: 2px solid var(--yellow);
 			justify-content: space-between;
 			border-radius: 20px;
 			overflow: hidden;
 
 			.box {
-				padding: var(--gutter);
+				padding: 0 var(--gutter);
 				width: 100%;
 				margin: 0;
 				height: auto;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+				
+
+				.form-text {
+
+					margin: 0;
+					padding: 0;
+					width: 100%;
+
+					h2 {
+						text-align: center;
+						font-size: 2rem;
+						align-items: center;
+						color: #507642;
+						width: fit-content;
+						display: flex;
+						margin: auto;
+					}
+				}
+
 				.row {
 					display: flex;
 					flex-direction: row;
 					width: 100%;
-					margin: 10px;
+					margin: 10px 0;
 					.cell {
 						display: flex;
 						flex-direction: column;
@@ -69,13 +88,14 @@
 						button {
 							width: auto;
 							padding: 10px;
-							background-color: var(--main-dark-color);
-							border: 1px solid var(--yellow);
+							background-color: #FFFFFF;
+							border: 1px solid #B8B3B3;
 							font-size: 1rem;
-							border-radius: 5px;
+							border-radius: 25px;
+							color: #989292;
 						}
 						textarea {
-							min-height: 160px;
+							min-height: 120px;
 							resize: none;
 							width: auto;
 							right: 0;
@@ -89,8 +109,8 @@
 							font-family: var(--main-font);
 							font-size: 1rem;
 							font-weight: 800;
-							background-color: transparent;
-							color: var(--yellow);
+							background-color: #507642;
+							color: white;
 							cursor: pointer;
 							transition: var(--quick-delay);
 							position: relative;
@@ -107,7 +127,7 @@
 								transition: var(--normal-delay);
 
 								&#bg {
-									background-color: var(--yellow);
+									background-color: #a37b45;
 									z-index: 0;
 								}
 							}
@@ -122,7 +142,7 @@
 						button:active {
 							transition: var(--quick-delay);
                             p  {
-                                color: var(--main-dark-color);
+                                color: white;
                             }
 
 							span {
@@ -133,7 +153,7 @@
 				}
 			}
 			.box:nth-child(1) {
-				background-color: var(--yellow);
+				/* background-color: var(--yellow); */
 				* {
 					color: var(--main-dark-color);
 				}

@@ -26,27 +26,8 @@
 					</button>
 				</div>
 			</div>
-
 			<!-- = -->
-			<!-- <div class="lower">
-				<button id="action-1">
-					<p>Find a Collection Event Near You</p>
-					<span class="button-effect" id="mask"></span>
-					<span class="button-effect" id="bg"></span>
-				</button>
-				
-				<button id="action-2">
-					<p>Action 2</p>
-					<span class="button-effect" id="mask"></span>
-					<span class="button-effect" id="bg"></span>
-				</button>
-			</div> -->
 		</div>
-		<!-- = -->
-		<!-- <div class="floating-box-foo" id="logo">
-			<img src="" alt="logo element here" class="floating-logo" />
-		</div> -->
-		<!-- = -->
 		<img src={HomePageAssets.HomePageHeader} alt="" srcset="" class="landing-page-bg" />
 	</section>
 	<!-- LANDING PAGE SECTION -->

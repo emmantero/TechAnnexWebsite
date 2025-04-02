@@ -7,6 +7,9 @@
 	import { onMount } from 'svelte';
 	import NavBar from '$lib/components/NavBar/NavBar.svelte';
 	import Footer from '$lib/components/Footer/Footer.svelte';
+	import EventsPage from '$lib/views/EventsPage/EventsPage.svelte';
+	import PartnershipsPage from '$lib/views/PartnershipsPage/PartnershipsPage.svelte';
+	import ServicesPage from '$lib/views/ServicesPage/ServicesPage.svelte';
 	let reloader = $state(false);
 
 	/**
@@ -31,7 +34,10 @@
 	const _routes: PageComponent[] = [
 		Page('home', HomePage),
 		Page('about', AboutPage),
-		Page('contact_us', ContactPage)
+		Page('contact_us', ContactPage),
+		Page('services', ServicesPage),
+		Page('events', EventsPage),
+		Page('partnerships', PartnershipsPage),
 	];
 
 	const _navBarRoutes = [

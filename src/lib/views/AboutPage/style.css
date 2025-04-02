@@ -37,6 +37,7 @@
 
     animation: fadeIn;
 	animation-duration: 0.8s;
+    /* background-color: #F3F4EC; */
     
     
     .aboutUs-header {
@@ -103,4 +104,154 @@
             opacity: 0.6;
         }
     }
+
+    .aboutUs-summary {
+        display: flex;
+		flex-direction: column;
+		/* color: var(--yellow); */
+		font-family: var(--main-font);
+		width: 100vw;
+		background-color: #F3F4EC;
+
+        .whoWeAre {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+
+            .whoWeAre-title {
+                color: #507642;
+                font-size: 2rem;
+            }
+
+            .whoWeAre-card {
+                display: flex;
+                flex-direction: row;
+                padding: 20px;
+                background-color: white;
+
+                .whoWeAre-card-desc {
+                    /* margin: 10px; */
+                    padding: 0 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    color: #A37B45;
+
+                    /* .whoWeAre-card-header {
+                        font-size: 1.2rem;
+                    } */
+
+                    .whoWeAre-card-text  {
+
+                    }
+
+                    .readMoreHere {
+                        font-style: italic;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .ourImpact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* padding: 30px 0; */
+
+            .ourImpact-title {
+                color: #507642;
+                font-size: 2rem;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .ourImpact-cards-container {
+                display: flex;
+                flex-direction: row;
+                gap: 75px;
+
+                .ourImpact-card img {
+                    transition: transform 0.3s ease-in-out; /* Adjust timing & easing */
+                }
+
+                .ourImpact-card img:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .howWeOperate {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            width: 100%;
+            margin-bottom: 50px;
+            /* background-color: #3CE7D7; */
+
+            .howWeOperate-title {
+                color: #507642;
+                font-size: 2rem;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .howWeOperate-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                /* border: 1px solid black; */
+                width: 80%;
+
+                .howWeOperate-desc {
+                    color: #A37B45;
+
+                    h1 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                button {
+                    width: 70%;
+                    /* height: 50px; */
+                    display: flex;
+                    /* flex-grow: 1; */
+                    justify-content: center;
+                    /* padding: 15px; */
+                    font-family: var(--main-font);
+                    /* font-size: .5rem; */
+                    font-weight: 800;
+                    background-color: #507642;
+                    color: white;
+                    cursor: pointer;
+                    transition: var(--quick-delay);
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 30px;
+                }
+
+                button:hover,
+                button:active {
+                    transition: var(--quick-delay);
+                    background-color: #a37b45;
+                            z-index: 0;
+                    p  {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
 }

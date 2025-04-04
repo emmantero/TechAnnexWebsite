@@ -12,7 +12,9 @@
     let eventHeaders = {
         first: 'Our events have collectively ',
         second: 'saved over ',
-        hightlight: '1.5 million pounds of e-waste'
+        hightlight: '1.5 million pounds of e-waste',
+        hightlight1: '1.5 million pounds of ',
+        hightlight2: 'e-waste'
     }
 
     let eventParagraph = {
@@ -30,7 +32,8 @@
 			<div class="upper">
 				<div class="upper-h1">
                     <h1>{eventHeaders.first}</h1>
-                    <h1>{eventHeaders.second} <span>{eventHeaders.hightlight}</span> </h1>
+                    <h1>{eventHeaders.second} <span>{eventHeaders.hightlight1}</span> </h1>
+                    <h1><span>{eventHeaders.hightlight2}</span> </h1>
                 </div>
                 <div class="upper-p">
                     <p>

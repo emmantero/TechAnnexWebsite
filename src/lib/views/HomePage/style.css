@@ -240,58 +240,6 @@
 
 			/* ======================= */
 
-			/* .keyHighlights-container {
-				width: 1300px;
-				position: relative;
-				display: flex;
-				flex-direction: column;
-
-				.keyHighlights-title {
-					color: #507642;
-					font-size: 2rem;
-				}
-
-				.keyHighlights-carousel {
-					overflow: hidden;
-					white-space: nowrap;
-
-					.carousel-slide {
-						display: flex;
-						flex-direction: row;
-						justify-content: space-between;
-						animation: 8s slide infinite linear;
-
-						.carousel-card {
-							background-color: white;
-							width: 375px;
-							height: 400px;
-							border-radius: 20px;
-
-							.carousel-image {
-								width: 375px;
-								border-radius: 20px 0 0 0;
-
-								img{
-									width: 375px;
-									height: 250px;
-									object-fit:cover;
-									border-radius: 20px 20px 0 0;
-								}
-							}
-
-							.carousel-text {
-								color: #A37B45;
-								display: flex;
-								justify-content: start;
-								margin: 0 25px;
-							}
-						}
-					}
-				}
-				
-			} */
-
-
 			.keyHighlights-container {
 				width: 1300px;
 				position: relative;

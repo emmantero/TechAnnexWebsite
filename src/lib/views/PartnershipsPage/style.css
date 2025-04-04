@@ -1,0 +1,359 @@
+@import "../../../global.css";
+
+/* POPPINS GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--landing-page-height: 600px;
+	--landing-page-height-min: 500px;
+	--landing-page-height-small: 420px;
+	--landing-page-height-long: 820px;
+	--logo-size-regular: 300px;
+	--logo-size-midsize: 260px;
+	--logo-size-small-boi: 220px;
+	--summary-img-height: 400px;
+	--summary-img-width: 650px;
+	--summary-img-radius: 18px;
+}
+
+.partnerships {
+    animation: fadeIn;
+    animation-duration: 0.8s;
+    background-color: #F3F4EC;
+
+
+    .partnership-content {  /* SECTION */
+        position: relative;
+        min-height: var(--landing-page-height-min);
+        width: 100vw;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+        .ourPartners-container {
+            width: 85%;
+
+            .ourPartners-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                /* border: 3px solid aquamarine; */
+    
+                .ourPartners-title {
+                    font-size: 5rem;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    color: #507642;
+    
+                    h1 {
+                        margin: 0;
+                    }
+    
+                }
+    
+                .ourPartners-paragraph {
+                    text-align: center;
+                    color: #A37B45;
+    
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+    
+            .partners-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 30px 0;
+                width: 100%;
+                /* background-color: bisque; */
+    
+                .partners-card {
+                    /* border: 2px solid green; */
+
+                    .container {
+                        position: relative;
+                        height: 250px;
+                        width: 250px;
+                        background-color: white;
+                        border-radius: 25px;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+                        display: flex;
+                        align-items: center;  /* Centers vertically */
+                        justify-content: center; /* Centers horizontally */
+                      }
+                      
+                      .image {
+                        display: block;
+                        width: 80%;
+                        height: auto;
+                        object-fit: contain;
+                      }
+                      
+                      .overlay {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                        transition: .5s ease;
+                        background-color: white;
+                      }
+                      
+                      .container:hover .overlay {
+                        opacity: 0.9;
+                      }
+                      
+                      .text {
+                        color: #A37B45;
+                        font-size: 1rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        width: 60%;
+                      }
+
+                    .partners-text {
+                        font-family: "Poppins", sans-serif;
+                        color: #507642;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .ourPartners-statement {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                text-decoration: underline;
+                color: #A37B45;
+                margin-bottom: 50px;
+
+
+                p {
+                    margin: 0;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    font-style: italic;
+                }
+            }
+        }
+
+
+         /* WHY PARTNER WITH US? */
+
+         .whyPartnerWithUs-container {
+            width: 100%;
+            background-color: white;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+
+            .whyPartnerWithUs-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0;
+
+                h1 {
+                    color: #507642;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 3rem;
+                }
+            }
+
+            /* GRID */
+            .grid {
+                display: flex;
+                gap: 1rem;
+                margin: auto;
+                width: 80%;
+                height: auto;
+                justify-content: space-between;
+                border-radius: 20px;
+                overflow: hidden;
+    
+                .box {
+                    /* padding: 0 var(--gutter); */
+                    width: 100%;
+                    margin: 0;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    .benefits-container {
+                        width: auto;
+                        /* background-color: #F3F4EC; */
+                        /* border: 2px solid black; */
+                        padding: 0 15px;
+
+                        .benefits-title {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            h1 {
+                                font-family: "Poppins", sans-serif;
+                                font-weight: 600;
+                                color: #507642;
+                                margin: 0;
+                                font-size: 2rem;
+                                padding-top: 20px;
+                            }
+                        }
+
+                        .benefits-list {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            margin: 15px;
+
+                            .benefits-item {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                align-items: center;
+                            }
+                        }
+    
+                        /* img { 
+                            width: 100%;
+                            height: auto;
+                        } */
+                    }
+                    
+    
+                    .form-text {
+    
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+    
+                        h2 {
+                            text-align: center;
+                            font-size: 2rem;
+                            align-items: center;
+                            color: #507642;
+                            width: fit-content;
+                            display: flex;
+                            margin: auto;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 600;
+                        }
+                    }
+    
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        margin: 10px 0;
+                        .cell {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            padding: 0px 6px;
+                            margin: 3px;
+    
+                            label {
+                                font-size: 0.78rem;
+                                padding: 4px;
+                            }
+    
+                            input,
+                            textarea,
+                            button {
+                                width: auto;
+                                padding: 10px;
+                                background-color: #FFFFFF;
+                                border: 1px solid #B8B3B3;
+                                font-size: 1rem;
+                                border-radius: 25px;
+                                color: #989292;
+                            }
+                            textarea {
+                                min-height: 120px;
+                                resize: none;
+                                width: auto;
+                                right: 0;
+                            }
+                            button {
+                                width: auto;
+                                display: flex;
+                                flex-grow: 1;
+                                justify-content: center;
+                                padding: 15px;
+                                font-family: var(--main-font);
+                                font-size: 1rem;
+                                font-weight: 800;
+                                background-color: #507642;
+                                color: white;
+                                cursor: pointer;
+                                transition: var(--quick-delay);
+                                position: relative;
+                                overflow: hidden;
+    
+                                span {
+                                    position: absolute;
+                                    content: '';
+                                    display: block;
+                                    width: 0%;
+                                    height: 100%;
+                                    inset: 0;
+                                    transform: scale(1.5);
+                                    transition: var(--normal-delay);
+    
+                                    &#bg {
+                                        background-color: #a37b45;
+                                        z-index: 0;
+                                    }
+                                }
+    
+                                p {
+                                    z-index: 5;
+                                    margin: auto;
+                                }
+                            }
+    
+                            button:hover,
+                            button:active {
+                                transition: var(--quick-delay);
+                                p  {
+                                    color: white;
+                                }
+    
+                                span {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .box:nth-child(1) {
+                    /* background-color: var(--yellow); */
+                    * {
+                        color: var(--main-dark-color);
+                    }
+                }
+            }
+
+         }
+
+        
+    }
+}
+
+

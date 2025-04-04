@@ -5,9 +5,9 @@
 	// IMPORTING CSS
 	import './style.css';
 
-	// let eventHeader1 = 'Our events have collectively ';
-    // let eventHeader2 = 'saved over ';
-    // let eventHeaderHighlight = 'Our events have collectively ';
+
+    import { controllers } from '$lib/routing/routeController.svelte';
+	import * as index from '$lib';
 
     let eventHeaders = {
         first: 'Our events have collectively ',
@@ -58,31 +58,129 @@
                             <p>Date</p>
                         </div>
                         <div class="card-contents-btn">
-                            <button>
+                            <button
+                                onclick={() => {
+                                    controllers.RouteTo("contact_us");
+                                    index._setAnchorToActive("contact_us_id");
+                                }}
+                                id={"contact_us_id"}
+                                name={"contact_us"}
+                            >
                                 <p>JOIN EVENT</p>
                             </button>
                         </div>
                     </div>
+                    <img src={EventsAssets.Event1} alt="" srcset="" class="eventsImg"/>
                 </div>
 
                 <div class="card">
-                    <h1>hello</h1>
+                    <div class="card-contents">
+                        <div class="card-contents-text">
+                            <h1>Event Name</h1>
+                            <p>Date</p>
+                        </div>
+                        <div class="card-contents-btn">
+                            <button
+                                onclick={() => {
+                                    controllers.RouteTo("contact_us");
+                                    index._setAnchorToActive("contact_us_id");
+                                }}
+                                id={"contact_us_id"}
+                                name={"contact_us"}
+                            >
+                                <p>JOIN EVENT</p>
+                            </button>
+                        </div>
+                    </div>
+                    <img src={EventsAssets.Event2} alt="" srcset="" class="eventsImg"/>
                 </div>
 
                 <div class="card">
-                    <h1>hello</h1>
+                    <div class="card-contents">
+                        <div class="card-contents-text">
+                            <h1>Event Name</h1>
+                            <p>Date</p>
+                        </div>
+                        <div class="card-contents-btn">
+                            <button
+                                onclick={() => {
+                                    controllers.RouteTo("contact_us");
+                                    index._setAnchorToActive("contact_us_id");
+                                }}
+                                id={"contact_us_id"}
+                                name={"contact_us"}
+                            >
+                                <p>JOIN EVENT</p>
+                            </button>
+                        </div>
+                    </div>
+                    <img src={EventsAssets.Event3} alt="" srcset="" class="eventsImg"/>
                 </div>
 
                 <div class="card">
-                    <h1>hello</h1>
+                    <div class="card-contents">
+                        <div class="card-contents-text">
+                            <h1>Event Name</h1>
+                            <p>Date</p>
+                        </div>
+                        <div class="card-contents-btn">
+                            <button
+                                onclick={() => {
+                                    controllers.RouteTo("contact_us");
+                                    index._setAnchorToActive("contact_us_id");
+                                }}
+                                id={"contact_us_id"}
+                                name={"contact_us"}
+                            >
+                                <p>JOIN EVENT</p>
+                            </button>
+                        </div>
+                    </div>
+                    <img src={EventsAssets.Event4} alt="" srcset="" class="eventsImg"/>
                 </div>
 
                 <div class="card">
-                    <h1>hello</h1>
+                    <div class="card-contents">
+                        <div class="card-contents-text">
+                            <h1>Event Name</h1>
+                            <p>Date</p>
+                        </div>
+                        <div class="card-contents-btn">
+                            <button
+                                onclick={() => {
+                                    controllers.RouteTo("contact_us");
+                                    index._setAnchorToActive("contact_us_id");
+                                }}
+                                id={"contact_us_id"}
+                                name={"contact_us"}
+                            >
+                                <p>JOIN EVENT</p>
+                            </button>
+                        </div>
+                    </div>
+                    <img src={EventsAssets.Event5} alt="" srcset="" class="eventsImg"/>
                 </div>
 
                 <div class="card">
-                    <h1>hello</h1>
+                    <div class="card-contents">
+                        <div class="card-contents-text">
+                            <h1>Event Name</h1>
+                            <p>Date</p>
+                        </div>
+                        <div class="card-contents-btn">
+                            <button
+                                onclick={() => {
+                                    controllers.RouteTo("contact_us");
+                                    index._setAnchorToActive("contact_us_id");
+                                }}
+                                id={"contact_us_id"}
+                                name={"contact_us"}
+                            >
+                                <p>JOIN EVENT</p>
+                            </button>
+                        </div>
+                    </div>
+                    <img src={EventsAssets.Event6} alt="" srcset="" class="eventsImg"/>
                 </div>
             </div>
         </div>

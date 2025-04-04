@@ -9,6 +9,9 @@
 	let aboutUsHeaderTitle2 = 'TechAnnex';
 	let aboutUsHeaderText = 'At TechAnnex, we make e-waste recycling easy, secure and impactful.';
 
+	import { controllers } from '$lib/routing/routeController.svelte';
+	import * as index from '$lib';
+
 </script>
 
 <main class="about-content">
@@ -78,7 +81,15 @@
 
 					<p>Collaborating with community <br>organizations for event locations</p>
 
-					<button type="submit">
+					<button 
+						type="submit" 
+						onclick={() => {
+							controllers.RouteTo("partnerships");
+							index._setAnchorToActive("partnerships_id");
+						}}
+						id={"partnerships_id"}
+						name={"partnerships"}
+					>
 						<p>Be a Partner</p>
 						<span class="button-effect" id="mask"></span>
 						<span class="button-effect" id="bg"></span>

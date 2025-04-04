@@ -7,6 +7,9 @@
 	let headerSpecialText = 'E-Waste Recycling';
 
 	let text = "Find a Collection Event Near You";
+
+	import { controllers } from '$lib/routing/routeController.svelte';
+	import * as index from '$lib';
 </script>
 
 <main class="main-page-content">
@@ -21,7 +24,15 @@
 					<p>{headerSpecialText}</p>
 				</div>
 				<div class="upper-button">
-					<button class="header-btn">
+					<button 
+						class="header-btn"
+						onclick={() => {
+							controllers.RouteTo("events");
+							index._setAnchorToActive("events_id");
+						}}
+						id={"events_id"}
+						name={"events"}
+					>
 						<p class="header-btn-text">{text}</p>
 					</button>
 				</div>
@@ -94,7 +105,42 @@
 							</div>
 						</div>
 
+						<div class="carousel-card">
+							<div class="carousel-image">
+								<img src={HomePageAssets.Electronics} alt="" srcset="" />
+							</div>
+							<div class="carousel-text">
+								<h2>
+									1.5 Million Pounds of <br> Electronic Diverted <br> from Landfills!
+								</h2>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<div class="carousel-image">
+								<img src={HomePageAssets.Partneering} alt="" srcset="" />
+							</div>
+							<div class="carousel-text">
+								<h2>
+									Partnering with <br> Churches, Schools & <br> Non-Profits
+								</h2>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<div class="carousel-image">
+								<img src={HomePageAssets.CollectionEvent} alt="" srcset="" />
+							</div>
+							<div class="carousel-text">
+								<h2>
+									Join our Next Collection <br> Event!
+								</h2>
+							</div>
+						</div>
+						
+
 					</div>
+					
 
 					
 
@@ -119,6 +165,7 @@
 							<img src={HomePageAssets.Feb23} alt="" srcset="" />
 							<img src={HomePageAssets.Apr9} alt="" srcset="" />
 						</div>
+						
 	
 					</div>
 	

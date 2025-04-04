@@ -127,20 +127,34 @@
             .whoWeAre-card {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
                 padding: 20px;
                 background-color: white;
+                width: 75%;
+
+                .whoWeAre-card-img {
+
+                    img {
+                        /* transform: scale(1.05); */
+                        height: 100%;
+                    }
+                }
 
                 .whoWeAre-card-desc {
                     /* margin: 10px; */
                     padding: 0 20px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     color: #A37B45;
+                    word-spacing: 15px;
 
-                    /* .whoWeAre-card-header {
-                        font-size: 1.2rem;
-                    } */
+                    .whoWeAre-card-header {
+                        h1 {
+                            font-size: 2rem;
+                            margin: 0;
+                        }
+                    }
 
                     .whoWeAre-card-text  {
 

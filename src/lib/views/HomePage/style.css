@@ -199,7 +199,8 @@
 			/* ======================= */
 
 			.keyHighlights-container {
-				width: 90%;
+				width: 1300px;
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				/* position: relative; */

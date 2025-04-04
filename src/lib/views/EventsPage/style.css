@@ -105,7 +105,6 @@
 		flex-direction: column;
         justify-content: center;
         align-items: center;
-		/* color: var(--yellow); */
 		font-family: var(--main-font);
 		width: 100vw;
 		background-color: #F3F4EC;
@@ -113,8 +112,8 @@
 
         .events-container {
             width: 90%;
-            border: 1px solid black;
-            margin: 50px 0;
+            margin-top: 20px;
+            margin-bottom: 50px;
 
             .events-title {
                 color: #507642;
@@ -131,13 +130,14 @@
                 .card {
                     width: 45%;
                     height: 250px;
-                    background-color: #507642;
                     margin: 25px 0;
                     border-radius: 20px;
+                    overflow: hidden !important;
 
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
+                    position: relative;
 
                     .card-contents {
                         display: flex;
@@ -146,16 +146,55 @@
                         align-items:flex-end;
                         width: 80%;
                         margin: 0;
+                        z-index: 4;
+
+                        .card-contents-text {
+                            color: white;
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+
+                            h1 {
+                                margin: 5px 0;
+                                font-size: 2rem;
+                            }
+
+                            p {
+                                margin: 5px 0;
+                                font-size: 2rem;
+                            }
+                        }
 
                         .card-contents-btn {
                             display: flex;
                             justify-content: center;
-                            align-items: center;
+                            align-items: end;
+                            margin-bottom: 25px;
+                            width: 40%;
                             
-                            button {
-                                margin-top: 15px;
+
+                            button { 
+                                width: 100%;
+                                border-radius: 20px;
+                                background-color: #507642;
+                                color: white;
+                                border: none; /* Remove any borders */
+                                outline: none; /* Remove focus outline */
+                                font-weight: 700;
                             }
                         }
+
+                        
+                    }
+                    .eventsImg {
+                        user-select: none;
+                        z-index: 3;
+                        position: absolute;
+                        height: 250px;
+                        width: 100%;
+                        object-fit: cover;
+                        transform: scale(1.05);
+                        opacity: 0.9;
                     }
                 }
             }

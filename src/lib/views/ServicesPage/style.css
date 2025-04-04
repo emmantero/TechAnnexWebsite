@@ -1,0 +1,143 @@
+@import "../../../global.css";
+
+/* POPPINS GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--landing-page-height: 600px;
+	--landing-page-height-min: 500px;
+	--landing-page-height-small: 420px;
+	--landing-page-height-long: 820px;
+	--logo-size-regular: 300px;
+	--logo-size-midsize: 260px;
+	--logo-size-small-boi: 220px;
+	--summary-img-height: 400px;
+	--summary-img-width: 650px;
+	--summary-img-radius: 18px;
+}
+
+.services {
+    animation: fadeIn;
+    animation-duration: 0.8s;
+    background-color: #F3F4EC;
+
+    .services-content {
+        position: relative;
+        min-height: var(--landing-page-height-min);
+        width: 100vw;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+        .ourServices-container {
+            width: 85%;
+
+            .ourServices-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+
+                .ourServices-title {
+                    font-size: 4rem;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    color: #507642;
+    
+                    h1 {
+                        margin: 0;
+                    }
+    
+                }
+            }
+
+            .ourServices-offer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 100px;
+
+                /* background-color: gold; */
+
+                .whatWeOffer-text {
+                    width: 35%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    /* align-items: center; */
+
+                    h1 {
+                        font-size: 3rem;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 600;
+                        color: #507642;
+                    }
+
+                    p {
+                        color: #A37B45;
+                    }
+                }
+            }
+
+            .ourServices-carousel {
+                overflow: hidden;
+                /* white-space: nowrap; */
+
+                h1 {
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+                
+                .carousel-item {
+                    min-width: 500px;
+                    /* width: 500px; */
+                    height: 350px;
+                    background: #f0f0f0;
+                    border-radius: 8px;
+                    /* padding: 1rem; */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .recycle-container {
+                width: 100%;
+                /* background-color: gold; */
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 50px 0;
+
+                .howToRecycle-text {
+                    font-size: 2rem;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    color: #507642;
+                }
+
+                howToRecycle-img {
+                    img {
+                        margin: 0;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

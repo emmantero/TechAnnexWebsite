@@ -10,6 +10,20 @@
 
 	import { controllers } from '$lib/routing/routeController.svelte';
 	import * as index from '$lib';
+	import Carousel from './../../Carousel.svelte';
+
+	// =====================
+
+	const upcomingEvents: string[] = [
+		HomePageAssets.Dec19,
+		HomePageAssets.Feb23,
+		HomePageAssets.Apr9,
+		HomePageAssets.Dec19,
+		HomePageAssets.Feb23,
+		HomePageAssets.Apr9
+	];
+
+
 </script>
 
 <main class="main-page-content">
@@ -21,7 +35,10 @@
 				<h1>{headerTitle}</h1>
 				<div class="upper-p">
 					<p>{headerSubTitle}</p>
-					<p>{headerSpecialText}</p>
+					<div class="special-text-box">
+						<div>{headerSpecialText}</div>
+						<div>{headerSpecialText}</div>
+					</div>
 				</div>
 				<div class="upper-button">
 					<button 
@@ -105,6 +122,10 @@
 							</div>
 						</div>
 
+					</div>
+
+					<div class="carousel-slide">
+
 						<div class="carousel-card">
 							<div class="carousel-image">
 								<img src={HomePageAssets.Electronics} alt="" srcset="" />
@@ -137,14 +158,11 @@
 								</h2>
 							</div>
 						</div>
-						
 
 					</div>
-					
 
 					
-
-					
+				
 				</div>
 			</div>
 		</div>
@@ -158,7 +176,7 @@
 
 				<div class="upcomingEvents-carousel">
 
-					<div class="events-carousel-slide">
+					<!-- <div class="events-carousel-slide">
 	
 						<div class="events-carousel-card">
 							<img src={HomePageAssets.Dec19} alt="" srcset="" />
@@ -166,13 +184,31 @@
 							<img src={HomePageAssets.Apr9} alt="" srcset="" />
 						</div>
 						
-	
-					</div>
-	
+					</div> -->
+
+					<!-- <Carousel>
+						{#each Array(3) as _, i}
+						  <div class="carousel-item">
+							<img src={HomePageAssets.Dec19} alt="" srcset="" />
+							<img src={HomePageAssets.Feb23} alt="" srcset="" />
+							<img src={HomePageAssets.Apr9} alt="" srcset="" />
+						  </div>
+						{/each}
+					</Carousel> -->
+
+					<Carousel>
+						{#each upcomingEvents as img}
+							<div class="carousel-item">
+								<img src={img} alt="Gallery image" />
+						  	</div>
+						{/each}
+					</Carousel>
+
 				</div>
 			</div>
-
 		</div>
+
+		
 
 		
 	</section>
@@ -184,3 +220,4 @@
 	<!-- CALL TO ACTION -->
 	<!-- CALL TO ACTION -->
 </main>
+

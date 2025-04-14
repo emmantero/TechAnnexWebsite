@@ -27,8 +27,22 @@
 						<div class="logo-sect">
 							<h3>Company</h3>
 						</div>
-						<p>About</p>
-						<p>Certificate and Registration</p>
+						<div class="footer-upperbox-buttons">
+							<button
+								type="submit" 
+								onclick={() => {
+									controllers.RouteTo("about");
+									index._setAnchorToActive("about_id");
+								}}
+								id={"about_id"}
+								name={"about"}
+							>
+								<p>About</p>
+							</button>
+							<!-- <button>
+								<p>Certificate and Registration</p>
+							</button> -->
+						</div>
 					</div>
 				</div>
 				<div class="box">
@@ -36,9 +50,33 @@
 						<div class="logo-sect">
 							<h3>Useful Links</h3>
 						</div>
-						<p>Learn more about our Mission</p>
-						<p>Find an Event</p>
-						<p>Partner with Us</p>
+						<div class="footer-upperbox-buttons">
+							<!-- <button>
+								<p>Learn more about our Mission</p>
+							</button> -->
+							<button
+								type="submit" 
+								onclick={() => {
+									controllers.RouteTo("events");
+									index._setAnchorToActive("events_id");
+								}}
+								id={"events_id"}
+								name={"events"}
+							>
+								<p>Find an Event</p>
+							</button>
+							<button
+								type="submit" 
+								onclick={() => {
+									controllers.RouteTo("partnerships");
+									index._setAnchorToActive("partnerships_id");
+								}}
+								id={"partnerships_id"}
+								name={"partnerships"}
+							>
+								<p>Partner with Us</p>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -48,11 +86,11 @@
 			<div class="box-cont2">
 				<div class="right-box-container">
 					<div class="right-box">
-						<div class="social-icons">
+						<!-- <div class="social-icons">
 							<img src={FooterAssets.Instagram} alt="" srcset="" />
 							<img src={FooterAssets.Twitter} alt="" srcset="" />
 							<img src={FooterAssets.Facebook} alt="" srcset="" />
-						</div>
+						</div> -->
 						<div class="languages">
 							<p>English</p>
 							<p>|</p>
@@ -69,10 +107,11 @@
 
 		<div class="btm-text">
 			<div class="btm-text-group">
-				<p>Legal</p>
+				<!-- COMMENT UNTIL FURTHER NOTICE (by Emman Tero on April 14, 2025) -->
+				<!-- <p>Legal</p>
 				<p>Privacy Center</p>
 				<p>Privacy Policy</p>
-				<p>Terms and Condition</p>
+				<p>Terms and Condition</p> -->
 			</div>
 			<p id="">@2025 TechAnnex</p>
 		</div>

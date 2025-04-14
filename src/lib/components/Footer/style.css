@@ -63,7 +63,24 @@
 				font-size: 2rem;
 				font-family: var(--main-font);
 
-				.logo-sect {
+				.footer-upperbox-buttons {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: start;
+
+					button {
+						border: none;
+						background: none; /* optional: removes background */
+						color: white;     /* optional: text color */
+						margin: 0;
+						padding: 0;
+					}
+				}
+
+				
+
+				/* .logo-sect {
 					p {
 						font-size: 1rem;
 						line-height: 0.6rem;
@@ -74,7 +91,7 @@
 						color: var(--main-dark-color);
 						width: fit-content;
 					}
-				}
+				} */
 
 				.message {
 					margin-top: 50px;

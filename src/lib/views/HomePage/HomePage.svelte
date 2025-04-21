@@ -34,10 +34,10 @@
 			<div class="upper">
 				<h1>{headerTitle}</h1>
 				<div class="upper-p">
-					<p>{headerSubTitle}</p>
+					<h1>{headerSubTitle}</h1>
 					<div class="special-text-box">
 						<div>{headerSpecialText}</div>
-						<div>{headerSpecialText}</div>
+						<!-- <div>{headerSpecialText}</div> -->
 					</div>
 				</div>
 				<div class="upper-button">
@@ -124,9 +124,9 @@
 
 					</div>
 
-					<div class="carousel-slide">
+					<div class="carousel-slide desktop-only">
 
-						<div class="carousel-card">
+						<div class="carousel-card desktop-only">
 							<div class="carousel-image">
 								<img src={HomePageAssets.Electronics} alt="" srcset="" />
 							</div>
@@ -137,7 +137,7 @@
 							</div>
 						</div>
 
-						<div class="carousel-card">
+						<div class="carousel-card desktop-only">
 							<div class="carousel-image">
 								<img src={HomePageAssets.Partneering} alt="" srcset="" />
 							</div>
@@ -148,7 +148,7 @@
 							</div>
 						</div>
 
-						<div class="carousel-card">
+						<div class="carousel-card desktop-only">
 							<div class="carousel-image">
 								<img src={HomePageAssets.CollectionEvent} alt="" srcset="" />
 							</div>

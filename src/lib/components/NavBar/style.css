@@ -14,7 +14,6 @@
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100vw;
-		/* background-color: var(--main-dark-color); */
 		background-color: #F3F4EC;
 		font-family: var(--main-font);
 		height: var(--nav-bar-height);
@@ -35,9 +34,7 @@
 					color: var(--main-dark-color);
 					margin: auto;
 					font-size: 0.5rem;
-					/* background-color: var(--yellow); */
 					height: var(--logo-size-reg);
-					/* width: var(--logo-size-reg); */
 					width: 200px;
 					border-radius: 10px;
 				}
@@ -63,7 +60,6 @@
 
 			.anchor.active,
 			.anchor:hover {
-				/* border: 2px solid var(--yellow); */
 				color: #507642;
 				transition: var(--subtle-delay);
 			}
@@ -175,6 +171,8 @@
 		}
 	}
 }
+
+
 @media screen and (max-width: 5000px) {
 	* > #desktop-only {
 		display: flex;

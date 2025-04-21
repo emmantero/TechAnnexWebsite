@@ -21,10 +21,10 @@
 {#if loadIn}
 	<footer class="page-footer">
 		<div class="box-container">
-			<div class="box-cont1">
+			<div class="box-cont1 desktop-only">
 				<div class="box">
 					<div class="upper-box">
-						<div class="logo-sect">
+						<div class="logo-sect desktop-only">
 							<h3>Company</h3>
 						</div>
 						<div class="footer-upperbox-buttons">
@@ -36,6 +36,7 @@
 								}}
 								id={"about_id"}
 								name={"about"}
+								class="desktop-only"
 							>
 								<p>About</p>
 							</button>
@@ -46,7 +47,7 @@
 					</div>
 				</div>
 				<div class="box">
-					<div class="upper-box">
+					<div class="upper-box desktop-only">
 						<div class="logo-sect">
 							<h3>Useful Links</h3>
 						</div>
@@ -91,7 +92,7 @@
 							<img src={FooterAssets.Twitter} alt="" srcset="" />
 							<img src={FooterAssets.Facebook} alt="" srcset="" />
 						</div> -->
-						<div class="languages">
+						<div class="languages desktop-only">
 							<p>English</p>
 							<p>|</p>
 							<p>Mexico</p>
@@ -106,13 +107,14 @@
 		
 
 		<div class="btm-text">
-			<div class="btm-text-group">
-				<!-- COMMENT UNTIL FURTHER NOTICE (by Emman Tero on April 14, 2025) -->
-				<!-- <p>Legal</p>
+			<!-- COMMENT UNTIL FURTHER NOTICE (by Emman Tero on April 14, 2025) -->
+			<!-- <div class="btm-text-group">
+				
+				<p>Legal</p>
 				<p>Privacy Center</p>
 				<p>Privacy Policy</p>
-				<p>Terms and Condition</p> -->
-			</div>
+				<p>Terms and Condition</p>
+			</div> -->
 			<p id="">@2025 TechAnnex</p>
 		</div>
 	</footer>

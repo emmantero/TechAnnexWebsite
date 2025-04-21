@@ -203,4 +203,123 @@
     }
 
 
+    /* MEDIA QUERY */
+    @media (max-width: 768px) {
+
+        .events-header {
+            .floating-box-foo {
+                .upper {
+                    width: 80%;
+                    .upper-h1{
+                        h1 {
+                            font-size: 2rem;
+                            span {
+                                animation: effect 2s linear infinite;
+                            }
+                        }
+                    }
+    
+                    .upper-p {
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .eventsBody {
+            .events-container {
+                width: 90%;
+                margin-top: 20px;
+                margin-bottom: 50px;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                .events-title {
+                    color: #507642;
+                    font-size: 1.5rem;
+                }
+    
+                .events-cards {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .card {
+                        width: 90%;
+                        height: 250px;
+                        margin: 25px 0;
+                        border-radius: 20px;
+                        overflow: hidden !important;
+    
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        position: relative;
+    
+                        .card-contents {
+                            .card-contents-text {
+                                color: white;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                margin-bottom: 10px;
+    
+                                h1 {
+                                    margin: 5px 0;
+                                    font-size: 1.5rem;
+                                }
+    
+                                p {
+                                    margin: 5px 0;
+                                    font-size: 1.5rem;
+                                }
+                            }
+    
+                            .card-contents-btn {
+                                display: flex;
+                                justify-content: center;
+                                align-items: end;
+                                margin-bottom: 25px;
+                                width: 40%;
+                                
+    
+                                button { 
+                                    width: 100%;
+                                    border-radius: 20px;
+                                    background-color: #507642;
+                                    color: white;
+                                    border: none; /* Remove any borders */
+                                    outline: none; /* Remove focus outline */
+                                    font-weight: 700;
+                                }
+                            }
+    
+                            
+                        }
+                        .eventsImg {
+                            user-select: none;
+                            z-index: 3;
+                            position: absolute;
+                            height: 250px;
+                            width: 100%;
+                            object-fit: cover;
+                            transform: scale(1.05);
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
 }

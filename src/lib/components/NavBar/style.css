@@ -88,7 +88,7 @@
 		}
 
 		.mobile-anchor-container {
-			background-color: var(--main-dark-color);
+			background-color: #507642;
 			transition: var(--subtle-delay);
 			width: fit-content;
 			position: fixed;
@@ -129,9 +129,9 @@
 			position: fixed;
 			z-index: 10;
 			padding: 10px;
-			border: 3px solid var(--yellow);
+			border: 3px solid #507642;
 			border-radius: 20px;
-			background-color: var(--main-dark-color);
+			background-color: white;
 			display: flex;
 			flex-direction: column;
 			height: 60px;
@@ -147,7 +147,7 @@
 				content: '';
 				height: 4px;
 				width: 80%;
-				background-color: var(--yellow);
+				background-color: #507642;
 				display: flex;
 				position: relative;
 				margin: auto;
@@ -172,6 +172,7 @@
 	}
 }
 
+/* MEDIA QUERY */
 
 @media screen and (max-width: 5000px) {
 	* > #desktop-only {

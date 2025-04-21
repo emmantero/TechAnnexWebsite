@@ -10,6 +10,7 @@
 
     import Carousel from './../../Carousel.svelte';
 	import Slideshow from '../../Slideshow.svelte';
+	import { onMount } from 'svelte';
 
     const servicesImgCarousel: string[] = [
 		ServicesAssets.ServicesCarousel1,
@@ -19,6 +20,22 @@
         ServicesAssets.ServicesCarousel5,
 	];
 
+    // 
+    let isMobile = false;
+
+    const checkIfMobile = () => {
+        isMobile = window.matchMedia('(max-width: 768px)').matches;
+    };
+
+    onMount(() => {
+        checkIfMobile();
+
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        const listener = () => checkIfMobile();
+        mediaQuery.addEventListener('change', listener);
+
+        return () => mediaQuery.removeEventListener('change', listener);
+    });
 
 </script>
 
@@ -35,17 +52,18 @@
             </div>
 
             <div class="ourServices-offer">
+                <div class="slideShow-container">
+                    <Slideshow />
+                </div>
+
                 <div class="whatWeOffer-text">
                     <h1>What we offer</h1>
                     <p>TechAnnex offers a range of e-waste recycling solutions tailored to meet the needs of businesses, residents, and communities</p>
                 </div>
-
-                <div class="slideShow-container">
-                    <Slideshow />
-                </div>
             </div>
 
             <div class="ourServices-carousel">
+                {#if !isMobile}
                 <Carousel>
                     {#each servicesImgCarousel as img}
                         <div class="carousel-item">
@@ -53,6 +71,15 @@
                         </div>
                     {/each}
                 </Carousel>
+                {:else} 
+                <div class="ourServices-column">
+                    {#each servicesImgCarousel as img}
+                        <div class="carousel-item">
+                            <img src={img} alt="Gallery image" />
+                        </div>
+                    {/each}
+                </div>
+                {/if}
             </div>
 
             <div class="recycle-container">

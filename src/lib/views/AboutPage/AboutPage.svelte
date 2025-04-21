@@ -43,11 +43,11 @@
 				</div>
 				<div class="whoWeAre-card-desc">
 					<div class="whoWeAre-card-header">
-						<h1>TechAnnex has been serving the <br> community since 2007</h1>
+						<h1>TechAnnex has been serving the community since 2007</h1>
 					</div>
 					<div class="whoWeAre-card-text">
 						<p>
-							providing reliable and secure e-waste pickup services for <br> businesses and local communities. We offer a safe and legal <br> solution to dispose of unwanted electronics while ensuring the <br> protection of sensitive data.
+							providing reliable and secure e-waste pickup services for businesses and local communities. We offer a safe and legal solution to dispose of unwanted electronics while ensuring the protection of sensitive data.
 						</p>
 					</div>
 					<p class="readMoreHere">Read more here</p>
@@ -76,10 +76,13 @@
 			</div>
 
 			<div class="howWeOperate-container">
+				<div class="howWeOperate-img">
+					<img src={AboutUsAssets.Operate} alt="" srcset="" class="" />
+				</div>
 				<div class="howWeOperate-desc">
-					<h1>Partnering with certified <br>recyclers to safely process <br>collected e-waste</h1>
+					<h1>Partnering with certified recyclers to safely process collected e-waste</h1>
 
-					<p>Collaborating with community <br>organizations for event locations</p>
+					<p>Collaborating with community organizations for event locations</p>
 
 					<button 
 						type="submit" 
@@ -94,9 +97,6 @@
 						<span class="button-effect" id="mask"></span>
 						<span class="button-effect" id="bg"></span>
 					</button>
-				</div>
-				<div class="howWeOperate-img">
-					<img src={AboutUsAssets.Operate} alt="" srcset="" class="" />
 				</div>
 			</div>
 

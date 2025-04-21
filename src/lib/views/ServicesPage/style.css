@@ -56,7 +56,7 @@
 
             .ourServices-offer {
                 display: flex;
-                flex-direction: row;
+                flex-direction: row-reverse;
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 100px;
@@ -131,7 +131,7 @@
                     color: #507642;
                 }
 
-                howToRecycle-img {
+                .howToRecycle-img {
                     img {
                         margin: 0;
                     }
@@ -141,4 +141,109 @@
 
         }
     }
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+
+    .services {
+
+        .services-content {
+            .ourServices-container {
+                margin-top: 50px;
+    
+                .ourServices-text {
+    
+                    .ourServices-title {
+                        font-size: 2rem;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 400;
+                        color: #507642;
+        
+                        h1 {
+                            margin: 0;
+                        }
+        
+                    }
+                }
+    
+                .ourServices-offer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    margin-top: 30px;
+
+                    .whatWeOffer-text {
+                        width: 100%;
+    
+                        h1 {
+                            font-size: 2rem;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 600;
+                            color: #507642;
+                        }
+    
+                        p {
+                            color: #A37B45;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+    
+                .ourServices-carousel {
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 2rem;
+                    }
+
+                    .ourServices-column {
+
+                        .carousel-item {
+                            min-width: 350px;
+                            height: 250px;
+                            margin: 30px 0;
+        
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+    
+                .recycle-container {
+                    width: 100%;
+                    /* background-color: gold; */
+    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+    
+                    .howToRecycle-text {
+                        font-size: 1.5rem;
+                    }
+    
+                    .howToRecycle-img {
+                        display: flex;
+                        justify-content: center;
+                        min-width: 450px;
+                        margin-bottom: 50px;
+
+                        img {
+                            margin: 0 30px;
+                            width: 100%;
+                        }
+                    }
+    
+                }
+    
+            }
+        }
+
+    }
+
 }

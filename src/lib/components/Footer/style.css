@@ -23,6 +23,8 @@
 		/* opacity: 0.5; */
 	}
 
+
+
 	.box-container {
 		display: flex;
 		flex-direction: row;
@@ -77,21 +79,6 @@
 						padding: 0;
 					}
 				}
-
-				
-
-				/* .logo-sect {
-					p {
-						font-size: 1rem;
-						line-height: 0.6rem;
-						margin: 0;
-						height: fit-content;
-						padding: 6px;
-						background-color: var(--yellow);
-						color: var(--main-dark-color);
-						width: fit-content;
-					}
-				} */
 
 				.message {
 					margin-top: 50px;
@@ -163,7 +150,7 @@
 	.btm-text {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: end;
 		color: white;
 		width: calc(100% - (var(--gutter) * 2));
 		/* background-color: bisque; */
@@ -174,5 +161,23 @@
 			gap: 50px;
 			flex-wrap: wrap;
 		}
+	}
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+	
+	.page-footer {
+		height: 50%;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+
+	.btm-text {
+		display: flex;
+		justify-content: center !important;
 	}
 }

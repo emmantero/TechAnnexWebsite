@@ -21,7 +21,7 @@
                     <h1>{ourPartners}</h1>
                 </div>
                 <div class="ourPartners-paragraph">
-                    <p>TechAnnex proudly partners with a network of certified <br> recycleres, local organizations and retail locations to bring our <br> e-waste recycling initiatives to life.</p>
+                    <p>TechAnnex proudly partners with a network of certified recycleres, local organizations and retail locations to bring our e-waste recycling initiatives to life.</p>
                 </div>
             </div>
 

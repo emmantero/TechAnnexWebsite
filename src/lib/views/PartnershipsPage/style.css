@@ -159,7 +159,6 @@
          .whyPartnerWithUs-container {
             width: 100%;
             background-color: white;
-            margin-bottom: 50px;
             padding-bottom: 50px;
 
             .whyPartnerWithUs-title {
@@ -344,7 +343,6 @@
                     }
                 }
                 .box:nth-child(1) {
-                    /* background-color: var(--yellow); */
                     * {
                         color: var(--main-dark-color);
                     }
@@ -352,9 +350,293 @@
             }
 
          }
-
-        
     }
+
+
+
+     /* MEDIA QUERY */
+     @media (max-width: 768px) {
+
+        .partnership-content {  
+            .ourPartners-container {
+                width: 75%;
+                margin-top: 50px;
+    
+                .ourPartners-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+        
+                    .ourPartners-title {
+                        font-size: 2rem;
+                    }
+        
+                    .ourPartners-paragraph {
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+        
+                .partners-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 30px 0;
+                    width: 100%;
+                    /* background-color: bisque; */
+        
+                    .partners-card {
+    
+                        .container {
+                            height: 200px;
+                            width: 200px;
+                        }
+                          
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0;
+                            transition: .5s ease;
+                            background-color: white;
+                        }
+                          
+                        .container:hover .overlay {
+                            opacity: 0.9;
+                        }
+                          
+                        .text {
+                            color: #A37B45;
+                            font-size: 1rem;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            text-align: center;
+                            width: 60%;
+                        }
+    
+                        .partners-text {
+                            font-family: "Poppins", sans-serif;
+                            color: #507642;
+                            text-align: center;
+
+                            h2 {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+    
+                .ourPartners-statement {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                    text-decoration: underline;
+                    color: #A37B45;
+                    margin-bottom: 50px;
+    
+    
+                    p {
+                        margin: 0;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        font-style: italic;
+                    }
+                }
+            }
+    
+    
+             /* WHY PARTNER WITH US? */
+    
+             .whyPartnerWithUs-container {
+                width: 100%;
+                background-color: white;
+                padding-bottom: 50px;
+                
+                .whyPartnerWithUs-title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+    
+                    h1 {
+                        color: #507642;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 2rem;
+                    }
+                }
+    
+                /* GRID */
+                .grid {
+                    flex-direction: column;
+        
+                    .box {
+                        /* padding: 0 var(--gutter); */
+                        width: 100%;
+                        margin: 20px 0;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+        
+                        .benefits-container {
+                            background-color: #f3f4ec;
+                            border-radius: 15px;
+                            padding: 10px;
+    
+                            .benefits-title {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                h1 {
+                                    font-family: "Poppins", sans-serif;
+                                    font-weight: 600;
+                                    color: #507642;
+                                    margin: 0;
+                                    font-size: 1.2rem;
+                                    padding-top: 20px;
+                                }
+                            }
+    
+                            .benefits-list {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: start;
+                                margin: 15px;
+    
+                                .benefits-item {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                }
+                            }
+        
+                            /* img { 
+                                width: 100%;
+                                height: auto;
+                            } */
+                        }
+                        
+        
+                        .form-text {
+                            h2 {
+                                text-align: center;
+                                font-size: 1.5rem;
+                            }
+                        }
+        
+                        .row {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            margin: 10px 0;
+                            .cell {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                padding: 0px 6px;
+                                margin: 3px;
+        
+                                label {
+                                    font-size: 0.78rem;
+                                    padding: 4px;
+                                }
+        
+                                input,
+                                textarea,
+                                button {
+                                    width: auto;
+                                    padding: 10px;
+                                    background-color: #FFFFFF;
+                                    border: 1px solid #B8B3B3;
+                                    font-size: 1rem;
+                                    border-radius: 25px;
+                                    color: #989292;
+                                }
+                                textarea {
+                                    min-height: 120px;
+                                    resize: none;
+                                    width: auto;
+                                    right: 0;
+                                }
+                                button {
+                                    width: auto;
+                                    display: flex;
+                                    flex-grow: 1;
+                                    justify-content: center;
+                                    padding: 15px;
+                                    font-family: var(--main-font);
+                                    font-size: 1rem;
+                                    font-weight: 800;
+                                    background-color: #507642;
+                                    color: white;
+                                    cursor: pointer;
+                                    transition: var(--quick-delay);
+                                    position: relative;
+                                    overflow: hidden;
+        
+                                    span {
+                                        position: absolute;
+                                        content: '';
+                                        display: block;
+                                        width: 0%;
+                                        height: 100%;
+                                        inset: 0;
+                                        transform: scale(1.5);
+                                        transition: var(--normal-delay);
+        
+                                        &#bg {
+                                            background-color: #a37b45;
+                                            z-index: 0;
+                                        }
+                                    }
+        
+                                    p {
+                                        z-index: 5;
+                                        margin: auto;
+                                    }
+                                }
+        
+                                button:hover,
+                                button:active {
+                                    transition: var(--quick-delay);
+                                    p  {
+                                        color: white;
+                                    }
+        
+                                    span {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .box:nth-child(1) {
+                        * {
+                            color: var(--main-dark-color);
+                        }
+                    }
+                }
+    
+             }
+        }
+     }
+
 }
 
 

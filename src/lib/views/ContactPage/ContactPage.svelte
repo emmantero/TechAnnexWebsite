@@ -14,7 +14,7 @@
 					<img id="" src={ContactUsAssets.WeAreTechAnnex} alt="" srcset="" class="" />
 				</div>
 			</div>
-			<div class="box">
+			<div class="box form-box">
 
 				<div class="form-text">
 					<h2>Help us to reach you!</h2>
@@ -54,7 +54,7 @@
 			</div>
 
 			<div class="map-box">
-				<h1>You may also <br> contact us at:</h1>
+				<h1>You may also contact us at:</h1>
 
 				<div class="map-box-text">
 					<p>edgar.reyes@techannexcorp.net</p>

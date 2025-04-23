@@ -50,7 +50,17 @@
 
 		<div class="map-grid">
 			<div class="map-box">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.8135230820594!2d-117.68190569999999!3d33.66199339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce9d1cbcbb157%3A0x4c8e82010295599a!2s241%20Siena%2C%20Lake%20Forest%2C%20CA%2092630%2C%20USA!5e0!3m2!1sen!2sph!4v1743386460904!5m2!1sen!2sph" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.8135230820594!2d-117.68190569999999!3d33.66199339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce9d1cbcbb157%3A0x4c8e82010295599a!2s241%20Siena%2C%20Lake%20Forest%2C%20CA%2092630%2C%20USA!5e0!3m2!1sen!2sph!4v1743386460904!5m2!1sen!2sph" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+				<div class="map-container-foo">
+					<a
+					  href="https://maps.app.goo.gl/xDURxbuVRzmJSZBn6"
+					  draggable="false"
+					  target="_blank"
+					>
+					  <h3 id="maps-text-indicator-open">Open in Google Maps</h3>
+					  <img draggable="false" src={ContactUsAssets.MapImage} alt="" />
+					</a>
+				  </div>
 			</div>
 
 			<div class="map-box">

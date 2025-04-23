@@ -179,19 +179,16 @@
 			margin: 50px auto;
 			width: 100%;
 			height: auto;
-			/* justify-content: space-between; */
 			border-radius: 20px;
 			overflow: hidden;
 			
 			.map-box {
-				/* padding: 0 var(--gutter); */
 				width: 100%;
 				height: auto;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				/* background-color: gold; */
 
 				h1 {
 					font-size: 3rem;

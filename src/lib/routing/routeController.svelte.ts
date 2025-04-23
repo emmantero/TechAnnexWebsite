@@ -22,7 +22,7 @@ const initialize = () => {
             if (_routes.has(path)) {
                 _currentRoute = path
                 _pageSuffix = btoa(_currentRoute)
-                goto(_pagePreffix + _currentRoute + "#" + _pageSuffix + "/")
+                goto(_pagePreffix + _currentRoute)
                 this.Reload()
             }
         },

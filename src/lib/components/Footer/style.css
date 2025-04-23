@@ -150,7 +150,7 @@
 	.btm-text {
 		display: flex;
 		flex-direction: row;
-		justify-content: end;
+		justify-content: center;
 		color: white;
 		width: calc(100% - (var(--gutter) * 2));
 		/* background-color: bisque; */

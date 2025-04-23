@@ -6,3 +6,6 @@
 
 import _WeAreTechAnnex from "./We Are TechAnnex.png"
 export const WeAreTechAnnex = _WeAreTechAnnex
+
+import _MapImage from "./MapImage.png"
+export const MapImage = _MapImage

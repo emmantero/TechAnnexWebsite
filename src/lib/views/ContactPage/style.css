@@ -189,9 +189,60 @@
 				height: auto;
 				display: flex;
 				flex-direction: column;
-				justify-content: space-evenly;
+				justify-content: center;
 				align-items: center;
 				/* background-color: gold; */
+
+				h1 {
+					font-size: 3rem;
+				}
+
+				.map-container-foo {
+					position: relative;
+					height: 100%;
+					width: 100%;
+					overflow: hidden;
+					border-radius: 7px;
+					margin: 50px auto auto auto;
+					background-color: #136b38;
+			
+					#maps-text-indicator-open {
+						position: absolute;
+						background-color: #136b38;
+						padding: 10px 20px;
+						color: white;
+						transition: all 0.32s ease;
+						border-radius: 20px;
+						opacity: 0;
+						/* margin: 150px 265.8px; */
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						z-index: 1;
+					}
+			
+					img {
+						height: 100%;
+						width: inherit;
+						object-fit: cover;
+						filter: blur(0px);
+						transition: all 0.52s ease;
+						z-index: 0;
+						-webkit-user-drag: none;
+					}
+				}
+			
+				.map-container-foo:hover {
+					img {
+						transition: all 0.52s ease;
+						filter: blur(8px);
+					}
+			
+					#maps-text-indicator-open {
+						transition: all 0.38s ease;
+						opacity: 0.7;
+					}
+				}
 
 				h1 {
 					margin: 0;
@@ -561,12 +612,58 @@
 						font-size: 1.5rem;
 					}
 
+					.map-container-foo {
+						position: relative;
+						height: 360px;
+						width: 70vw;
+						overflow: hidden;
+						border-radius: 7px;
+						margin: 50px auto auto auto;
+			
+						#maps-text-indicator-open {
+							position: absolute;
+							background-color: rgb(13, 94, 135);
+							padding: 10px 20px;
+							color: white;
+							transition: all 0.32s ease;
+							border-radius: 20px;
+							opacity: 0;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							z-index: 1;
+
+						}
+			
+						img {
+							height: 100%;
+							width: inherit;
+							object-fit: cover;
+							filter: blur(0px);
+							transition: all 0.52s ease;
+							z-index: 0;
+							-webkit-user-drag: none;
+							object-position: center;
+						}
+					}
+			
+					.map-container-foo:hover {
+						img {
+							transition: all 0.52s ease;
+							filter: blur(8px);
+						}
+			
+						#maps-text-indicator-open {
+							transition: all 0.38s ease;
+							opacity: 0.7;
+						}
+					}
+
 					.map-box-text {
 						display: flex;
 						flex-direction: column;
 						justify-content: center;
 						align-items: center;
-						background-color: azure;
 						text-align: center;
 						width: fit-content;
 

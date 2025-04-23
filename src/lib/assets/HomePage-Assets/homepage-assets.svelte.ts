@@ -4,7 +4,7 @@
 // import _LandingPageBG  from "./landingPageBG.jpg"
 // export const LandingPageBG = _LandingPageBG 
 
-import _HomePageHeader from "./computerOnSandF.pnh.webp"
+import _HomePageHeader from "./homepageHeader.png"
 export const HomePageHeader = _HomePageHeader 
 
 import _Quote from "./quote.png"

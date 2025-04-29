@@ -13,7 +13,7 @@
 	import { onMount } from 'svelte';
 
     const servicesImgCarousel: string[] = [
-		ServicesAssets.ServicesCarousel1,
+		ServicesAssets.ServicesCarousel1v2,
         ServicesAssets.ServicesCarousel2,
         ServicesAssets.ServicesCarousel3,
         ServicesAssets.ServicesCarousel4,

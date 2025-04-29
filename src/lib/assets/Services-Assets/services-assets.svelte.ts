@@ -7,6 +7,9 @@
 import _ServicesCarousel1  from "./E-Waste Pickup.png"
 export const ServicesCarousel1 = _ServicesCarousel1
 
+import _ServicesCarousel1v2  from "./E-Waste Pickup 2.png"
+export const ServicesCarousel1v2 = _ServicesCarousel1v2
+
 import _ServicesCarousel2  from "./Free E-Waste Drives.png"
 export const ServicesCarousel2 = _ServicesCarousel2
 

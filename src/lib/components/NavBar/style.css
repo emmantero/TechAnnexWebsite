@@ -61,6 +61,7 @@
 			.anchor.active,
 			.anchor:hover {
 				color: #507642;
+				border: 2px solid #507642;
 				transition: var(--subtle-delay);
 			}
 		}

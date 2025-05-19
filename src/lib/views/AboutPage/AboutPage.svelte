@@ -12,12 +12,19 @@
 	import { controllers } from '$lib/routing/routeController.svelte';
 	import * as index from '$lib';
 
+	// import Modal from '$lib/components/UI/Modal.svelte';
+	import Modal from '../../../lib/components/UI/Modal.svelte';
+	import ModalContent from '../../../lib/components/UI/ModalContent.svelte';
+  	
+	let showModal = false;
+
+	function toggleModal() {
+		showModal = !showModal;
+	}
+
 </script>
 
 <main class="about-content">
-	<!-- <div class="aboutUs-header">
-		<img src={AboutUsAssets.Header} alt="" srcset="" />
-	</div> -->
 	<section class="aboutUs-header">
 		<div class="floating-box-foo">
 			<!-- = -->
@@ -50,7 +57,16 @@
 							providing reliable and secure e-waste pickup services for businesses and local communities. We offer a safe and legal solution to dispose of unwanted electronics while ensuring the protection of sensitive data.
 						</p>
 					</div>
-					<p class="readMoreHere">Read more here</p>
+					<p class="readMoreHere" on:click={toggleModal}>Read more here</p>
+
+					<Modal showModal={showModal} onClose={toggleModal}>
+						<ModalContent
+						  imageUrl={AboutUsAssets.CardImg}
+						  title="TechAnnex has been serving the community since 2007"
+						  description="providing reliable and secure e-waste pickup services for businesses and local communities. We offer a safe and legal solution to dispose of unwanted electronics while ensuring the protection of sensitive data. Over the years, we've identified a critical gap in e-waste recycling services—underserved residential communities. In response, we expanded our reach beyond businesses to serve neighborhoods and households, making it easier for everyone to participate in responsible recycling. Our commitment to environmental compliance and data security is at the core of what we do. That's why we only partner with state-certified recyclers, ensuring that all materials are handled responsibly and that all data-bearing devices are securely processed."
+						/>
+					  </Modal>
+
 				</div>
 			</div>
 		</div>
@@ -86,7 +102,7 @@
 
 					<button 
 						type="submit" 
-						onclick={() => {
+						on:click={() => {
 							controllers.RouteTo("partnerships");
 							index._setAnchorToActive("partnerships_id");
 						}}

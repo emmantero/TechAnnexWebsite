@@ -142,6 +142,7 @@
                     .readMoreHere {
                         font-style: italic;
                         text-decoration: underline;
+                        cursor: pointer;
                     }
                 }
             }

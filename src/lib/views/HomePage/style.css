@@ -345,101 +345,6 @@
 		}
 	}
 }
-
-/* @media (max-width: 1024px) {
-	.main-page-content {
-	  .landing-page {
-		flex-direction: column;
-		align-items: center;
-  
-		.floating-box-foo {
-		  width: 80%;
-		  margin-left: 0;
-		  flex-direction: column;
-		  align-items: center;
-		  text-align: center;
-  
-		  .upper h1 {
-			font-size: 3.5rem;
-			line-height: 4rem;
-		  }
-  
-		  .upper p {
-			font-size: 1.4rem;
-		  }
-  
-		  .upper-button {
-			width: 100%;
-			margin-top: 20px;
-		  }
-		}
-  
-		.landing-page-bg {
-		  object-position: center;
-		}
-	  }
-  
-	  .summary {
-		.content {
-		  flex-direction: column;
-		  width: 100%;
-		  padding: 0 1rem;
-  
-		  .homepage-intro {
-			flex-direction: column;
-			padding: 30px 0;
-			gap: 15px;
-			font-size: 1.2rem;
-		  }
-  
-		  .channel-partners-carousel {
-			margin: 0 2em;
-			padding: 50px 0;
-		  }
-  
-		  .keyHighlights-container {
-			width: 100%;
-		  }
-  
-		  .keyHighlights-title {
-			font-size: 1.6rem;
-		  }
-  
-		  .carousel-card {
-			width: 280px;
-			height: 340px;
-		  }
-  
-		  .carousel-image {
-			width: 280px;
-			height: 200px;
-		  }
-  
-		  .carousel-text {
-			font-size: 1rem;
-			margin: 0 15px;
-		  }
-  
-		  .upcomingEvents-container {
-			width: 100%;
-		  }
-  
-		  .upcomingEvents-title {
-			font-size: 1.6rem;
-		  }
-  
-		  .carousel-item {
-			min-width: 300px;
-			height: 250px;
-		  }
-		}
-  
-		.content:nth-child(even) {
-		  flex-direction: column;
-		}
-	  }
-	}
-  } */
   
   @media (max-width: 768px) {
 	.main-page-content {
@@ -448,11 +353,9 @@
 
 
 		.floating-box-foo {
-			/* width: 95%; */
 			display: flex;
 			align-items: center;  /* Centers vertically */
 			justify-content: flex-start; /* Aligns to the left */
-			/* z-index: 5; */
 			width: 55%;
 			margin-left: 30px;
   
@@ -463,10 +366,6 @@
 					line-height: 1.75rem;
 				}
 		
-				/* p {
-					font-size: 1.2rem;
-				} */
-
 				.upper-p {
 					color: white;
 

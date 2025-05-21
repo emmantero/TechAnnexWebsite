@@ -176,26 +176,6 @@
 
 				<div class="upcomingEvents-carousel">
 
-					<!-- <div class="events-carousel-slide">
-	
-						<div class="events-carousel-card">
-							<img src={HomePageAssets.Dec19} alt="" srcset="" />
-							<img src={HomePageAssets.Feb23} alt="" srcset="" />
-							<img src={HomePageAssets.Apr9} alt="" srcset="" />
-						</div>
-						
-					</div> -->
-
-					<!-- <Carousel>
-						{#each Array(3) as _, i}
-						  <div class="carousel-item">
-							<img src={HomePageAssets.Dec19} alt="" srcset="" />
-							<img src={HomePageAssets.Feb23} alt="" srcset="" />
-							<img src={HomePageAssets.Apr9} alt="" srcset="" />
-						  </div>
-						{/each}
-					</Carousel> -->
-
 					<Carousel>
 						{#each upcomingEvents as img}
 							<div class="carousel-item">

@@ -165,7 +165,6 @@
 			z-index: 3;
 			position: absolute;
 			height: var(--landing-page-height);
-			position: absolute;
 			inset: 0;
 			width: 100vw;
 			object-fit: cover;
